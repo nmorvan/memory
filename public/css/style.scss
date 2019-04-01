@@ -1,0 +1,59 @@
+$my-color: grey; 
+$my-width: 70%;
+
+/**
+* Header
+*/
+
+h1 {
+    width: $my-width ;
+    margin-left: auto ;
+    margin-right: auto ;
+    align-content: center;
+    background-color: $my-color;
+    text-align: center;
+    color: white;
+}
+
+/**
+* Grid
+*/
+
+.flex-container {
+    width: $my-width ;
+    margin-left: auto ;
+    margin-right: auto ;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;    
+    line-height: 75px;  
+    border-style: outset;  
+}
+
+hr {
+    border-style: none;  
+}
+
+/**
+* Progress Bar
+*/
+
+#myProgress {
+    width: $my-width ;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: $my-color;
+}
+  
+#myBar {
+    width: 0%;
+    height: 30px;
+    background-color: red;
+}

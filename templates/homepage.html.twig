@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Memory {% endblock %}
+
+{% block body %}
+
+    <h1>Jeu de mémoire</h1>
+
+    <!-- The grid displaying memory cards -->
+    <div id="grid" class="flex-container">
+
+        {% for i in 0..27 %}
+            <div id="d{{ i }}" class="card"></div>            
+        {% endfor %}
+
+    </div>
+
+    <hr/>
+
+    <!-- The ProgressBar -->
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>  
+       
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/memory.js') }}"></script>
+{% endblock %}
