@@ -1,8 +1,8 @@
 
-/**
+/**************************************************
  * ProgressBar
  * Show elapsed time to the user
- */
+ **************************************************/
 
 class ProgressBar {
 
@@ -42,11 +42,11 @@ class ProgressBar {
     }
 }
 
-/**
+/***************************************************
  * RandomHelper
  * Helps to generate random value and 
  * to choose a memory card randomly
- */
+ ***************************************************/
 
 class RandomHelper {
 
@@ -77,10 +77,10 @@ class RandomHelper {
 
 }
 
-/**
+/***************************************************
  * PersistHelper helps to persit data on server side
  * (Ajax request)
- */
+ ***************************************************/
 class PersistHelper {
 
     /**
@@ -123,9 +123,9 @@ class PersistHelper {
 
 }
 
-/**
- * Memory Card.
- */
+/***************************************************
+ * Memory Card
+ ***************************************************/
 class Card {
     /**
      * Construct Card with id and number.
@@ -206,9 +206,9 @@ class Card {
     }
 }
 
-/**
- * All the card are organised in a grid
- */
+/***************************************************
+ * Memory Grid (contains Memory Cards)
+ ***************************************************/
 class Grid {
 
     /**
@@ -338,9 +338,9 @@ class Grid {
     
 }
 
-/**
- * Run the Game
- */
+/***************************************************
+ * Main: run the Game
+ ***************************************************/
 
 let grid = new Grid();
 
