@@ -93,7 +93,9 @@ class PersistHelper {
             $.each( data.memories, ( i, item ) => { 
               results  = results + "\n" + item.gamer + " : " + this.getSeconds(item.duration) + ' sec';
             });
-            alert(results);
+            if (results !== "") {
+                alert("Meilleurs résultats :\n" + results);
+            }            
           })
         .fail( (err) => {
             console.log(err);
@@ -332,7 +334,7 @@ class Grid {
         this.shuffle(50);
         this.display();
         this._persistHelper.getBestResults();
-        this._gamer = prompt("Your name?");
+        this._gamer = prompt("Votre nom ?");
         this._progressBar.move();
     }
     
